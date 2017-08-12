@@ -1,0 +1,16 @@
+_site
+.sass-cache
+.jekyll-metadata
+node_modules
+.DS_Store
+.Rhistory
+.Rproj.user
+ToDo.md
+*.pdf
+*.docx
+*.pptx
+*_files
+*_cache
+assets
+pages
+

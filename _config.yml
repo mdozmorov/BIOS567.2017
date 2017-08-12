@@ -1,0 +1,41 @@
+# site setup
+# Exclude this stuff
+exclude: [node_modules, gulpfile.js, README.md, BUILD.md, LICENSE, .gitignore, pages, assets]
+permalink: /:title/
+markdown: kramdown
+baseurl:
+# course setup
+title: "Statistical Methods for High-throughput Genomic Data I"
+semester: "Fall 2017"
+duration: "15 Weeks"
+instructor:
+ - Mikhail Dozmorov
+coursecode:
+ - "BIOS 567"
+coursedates:
+ - "Monday/Wednesday class: August 28 to December 6, 2017. No classes on September 4."
+coursetime: "9:00 am to 10:20 am"
+courselocation:
+ - "Monday/Wednesday: One Capitol Square, Rm 5009"
+communication:
+ -
+   name: "Email"
+   description: ""
+   details: "mikhail.dozmorov@vcuhealth.org"
+ -
+   name: ""
+   description: ""
+   details: ""
+ -
+   name: ""
+   description: ""
+   details: ""
+officehours:
+  description: "Monday/Wednesday 10:30 pm to 12:00 pm at Biostatistics Office 730."
+  link: ""
+# Tachyons Version
+tv: "4.6.1"
+
+# SCSS Compress
+sass:
+  style: compressed
