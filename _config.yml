@@ -62,6 +62,6 @@ sass:
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-#BASE_PATH : http://mdozmorov.github.io/BIOS567.2017
+BASE_PATH : http://mdozmorov.github.io/BIOS567.2017
 
 #production_url : http://mdozmorov.github.io/BIOS567.2017
