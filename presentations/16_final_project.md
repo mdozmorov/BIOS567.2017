@@ -15,7 +15,7 @@ You must select a microarray dataset to analyze. Prerequisites for a dataset:
 - any of the following: gene expression, methylation, miRNA expression;
 - your own data permitted;
 
-See the [data page](/presentations/02_data/index.html) for the list of microarray databases and selected datasets. Tips for selecting a dataset:
+See the [data page]({{site.baseurl}}/presentations/02_data/index.html) for the list of microarray databases and selected datasets. Tips for selecting a dataset:
 
 1. Choose experimental condition of interest (e.g., a particular cancer type, environmental exposure, immunologic or neurologic disease);
 2. Explore the NCBI Gene Expression Omnibus (GEO) database, <http://www.ncbi.nlm.nih.gov/geo/> for the presence of such datasets - chances are you will find a microarray dataset for your condition of interest;
