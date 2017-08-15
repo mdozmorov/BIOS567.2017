@@ -4,7 +4,7 @@ categories:
 title: "Week 2.1 - R graphics, ggplot2, dplyr"
 slides: ""
 tags:
- - week-2.1
+ - 01b_Graphics_dplyr
 visible: 0
 ---
 
