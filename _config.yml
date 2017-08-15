@@ -3,6 +3,8 @@
 exclude: [node_modules, gulpfile.js, README.md, BUILD.md, LICENSE, .gitignore, pages, assets]
 permalink: /:title/
 markdown: kramdown
+# baseurl is used as a subdomain suffix. If a site is hosted on http://site.url/mysite, 
+# "/mysite" is the baseurl. For local debugging on localhost, baseurl should be commented out
 baseurl: /BIOS567.2017
 # course setup
 title: "Statistical Methods for High-throughput Genomic Data I"
