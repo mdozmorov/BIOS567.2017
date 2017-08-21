@@ -3,9 +3,9 @@ layout: default
 title: Acknowledgements, "Statistical Methods for High-throughput Genomic Data I" course, BIOS 567
 ---
 
-This course would be impossible without many resources and material shared by others. 
+This course would be impossible without many resources and material shared by others, listed at [https://github.com/mdozmorov/blogs](https://github.com/mdozmorov/blogs)
 
-Special thanks to Drs. [Kellie Archer](https://cph.osu.edu/people/karcher), [Jenny Bryan](https://github.com/jennybc), [Clay Ford](https://github.com/clayford), [Thomas Girke](http://girke.bioinformatics.ucr.edu/), [Rafael Irizarry](https://rafalab.github.io/), [Michael Love](https://mikelove.github.io/), [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/), [Darlene Goldstein](http://lausanne.isb-sib.ch/~darlene/index.html), [Terry Speed](http://www.wehi.edu.au/people/terry-speed), [STDHA](http://www.sthda.com/english/), [Hao Wu](http://www.haowulab.org/), [Biostatistics](https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/biostatistics.html) and [Bioinformatics](http://bioinformatics.mdanderson.org/main/Main_Page) departments at MD Anderson, and many more.
+Special thanks to Drs. [Kellie Archer](https://cph.osu.edu/people/karcher), [Jenny Bryan](https://github.com/jennybc), [Clay Ford](https://github.com/clayford), [Thomas Girke](http://girke.bioinformatics.ucr.edu/), [Rafael Irizarry](https://rafalab.github.io/), [Michael Love](https://mikelove.github.io/), [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/), [Darlene Goldstein](http://lausanne.isb-sib.ch/~darlene/index.html), [Terry Speed](http://www.wehi.edu.au/people/terry-speed), [STDHA](http://www.sthda.com/english/), [Hao Wu](http://www.haowulab.org/), [Biostatistics](https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/biostatistics.html), [Steven Skiena](http://www3.cs.stonybrook.edu/~skiena/), [Bioinformatics](http://bioinformatics.mdanderson.org/main/Main_Page) departments at MD Anderson, and many more. 
 
 # Misc material
 
