@@ -1,0 +1,194 @@
+---
+title: "MathJax"
+author: "Mikhail Dozmorov"
+date: "Fall 2017"
+output:
+  ioslides_presentation:
+    css:
+    - ../css/fonts.css
+    - ../css/custom.css
+    transition: faster
+  beamer_presentation:
+    colortheme: dolphin
+    fig_caption: no
+    fig_height: 6
+    fig_width: 7
+    fonttheme: structurebold
+    theme: AnnArbor
+  slidy_presentation: default
+---
+
+<!--https://raw.githubusercontent.com/ohsu-knight-cancer-biostatistics/reproducible-research/32bba6a78e347d64745982fb6245915cecb1b7c3/slides-info-reproducible-research/study-group-2016/Chpt%2013%20Web%20Presentations/MathJax_2.Rmd-->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache=FALSE)
+```
+
+## Markdown Code: MathJax
+
+Markdown supports **MathJax JavaScript engine** to render mathematical equations and formulas
+ 
+``` 
+$s^{2} = \frac{\sum(x-\bar{x})^2}{n-1}$
+```
+
+
+$s^{2} = \frac{\sum(x-\bar{x})^2}{n-1}$
+
+Check out this online tutorial [http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
+ 
+Inline equations - use single "dollar sign" `$` to specify MathJax coding
+ 
+## Centering you equations
+
+Insertion of two dollar signs `$$` centers your equations. Other examples, off set and centered - notice double dollar signs:
+ 
+``` 
+  $ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} $
+  
+  $$ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} $$
+```
+
+Inline equation  $\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$ on the same line. Or, self-standing equation on a separate line $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+  
+  
+## More Interesting Codes:
+
+### Greek Letters:
+  
+```
+ $\alpha$      $\beta$       $\gamma$      $\chi$
+ $\Delta$      $\Sigma$      $\Omega$
+```
+
+### superscripts (^) and subscripts (_)
+
+```
+$x_i^2$       $log_2 x$
+
+```
+  
+### Greek Letters:  (not all capitalized Greek letters available)
+  
+$\alpha$      $\beta$       $\gamma$      $\chi$
+ 
+$\Delta$      $\Sigma$      $\Omega$
+  
+### superscripts `(^)` and subscripts `(_)`
+  
+$x_i^2$        $log_2 x$
+ 
+ 
+## Grouping with Brackets
+
+Use brackets {...} to delimit a formula containing a superscript or subscript.  Notice the difference the grouping makes:
+
+```
+${x^y}^z$
+$x^{y^z}$ 
+$x_i^2$
+$x_{i^2}$
+```
+  
+${x^y}^z$         $x^{y^z}$ 
+$x_i^2$           $x_{i^2}$
+
+## Scaling:
+
+Add the scaling code `\left(...\right)` to make automatic size adjustments
+
+```
+$(\frac{\sqrt x}{y^3})$
+$\left(\frac{\sqrt x}{y^3}\right)$
+```
+
+$(\frac{\sqrt x}{y^3})$
+$\left(\frac{\sqrt x}{y^3}\right)$
+
+## Sums and Integrals
+
+Subscript (_) designates the lower limit; superscript (^) designates upper limit:
+ 
+``` 
+$\sum_1^n$          $\sum_{i=0}^\infty i^2$
+```
+
+$\sum_1^n$          $\sum_{i=0}^\infty i^2$
+
+Other notable symbols:
+ 
+```
+- $\prod$           $\infty$ 
+- $\bigcup$         $\bigcap$
+- $\int$            $\iint$
+``` 
+
+$\prod$              $\infty$
+$\bigcup$            $\bigcap$
+$\int$               $\iint$
+
+
+## Radical Signs
+
+Use 'sqrt' code to adjust the size of its argument. Note the change in size of the square root function based on the code
+
+``` 
+1. $sqrt{x^3}$
+2. $sqrt[3]{\frac xy}$
+ and for complicated expressions use  brackets
+3. ${...}^{1/2}$
+```
+
+1. $\sqrt{x^3}$
+2. $\sqrt[3]{\frac xy}$
+3. ${...}^{1/2}$
+
+
+## You can also change fonts!
+
+```
+$\mathbb or $Bbb for 'Blackboard bold"
+$\mathbf for boldface  
+$\mathtt for 'typewritter' font
+$\mathrm for roman font
+$\mathsf for sans-serif
+$\mathcal for 'caligraphy' 
+$\mathscr for script letter: 
+$\mathfrak for "Fraktur" (old German style)
+```
+
+$\mathbb {ABCDEFG}$   $\mathbf {ABCDEFG}$   $\mathtt {ABCDEFG}$   $\mathrm {ABCDEFG}$   $\mathsf {ABCDEFG}$   $\mathcal {ABCDEFG}$   $\mathscr {ABCDEFG}$   $\mathfrak {ABCDEFG}$
+
+## You can also change fonts!
+
+Some special functions such as "lim" "sin" "max" and "ln" are normally set in roman font instead of italic.  Use `\lim`,  `\sin` to make these (roman):
+
+```
+$\sin x$   (roman)  vs  $sin x$  (italics)
+```
+$\sin x$   (roman)  vs $sin x$    (italics) 
+
+## And, add curly brackets
+
+```
+$$\begin{cases}
+\widehat{IF_{1D}} = IF_{1D} - f(D)/2 \\
+\widehat{IF_{2D}} = IF_{2D} + f(D)/2
+\end{cases} \ (1)$$
+```
+
+$$\begin{cases}
+\widehat{IF_{1D}} = IF_{1D} - f(D)/2 \\
+\widehat{IF_{2D}} = IF_{2D} + f(D)/2
+\end{cases} \ (1)$$
+
+## RStudio bonus
+
+Inline preview of forumlas and images in an RMarkdown document
+
+<center><img src="img/equation_preview_settings.png" height="370px" /></center>
+
+## References
+
+https://github.com/ohsu-knight-cancer-biostatistics/reproducible-research/blob/32bba6a78e347d64745982fb6245915cecb1b7c3/slides-info-reproducible-research/study-group-2016/Chpt%2013%20Web%20Presentations/MathJax_2.Rmd
+

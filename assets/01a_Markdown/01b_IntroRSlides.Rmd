@@ -1,0 +1,96 @@
+---
+title: "Introduction to `R`"
+author: "Mikhail Dozmorov"
+date: "Fall 2017"
+output:
+  ioslides_presentation:
+    css:
+    - ../css/fonts.css
+    - ../css/custom.css
+    transition: faster
+---
+
+```{r set-options, echo=FALSE, cache=FALSE}
+options(width = 50)
+```
+
+## Intro to R
+
+Demonstrate the following in `R`:
+
+- read in and manipulate tabular data
+- basic statistics
+- graphing
+
+This tutorial assumes you're brand new to `R`. The goal is to learn getting the data into `R` and do basic analysis.
+
+## A little about `R`
+
+- A statistical computing environment with its own language
+- Released in 2000; an open source implementation of `S`
+- Highly regarded for its statistical and graphical facilities
+- Maintained by volunteers
+- https://www.r-project.org/
+- Easy interface with RStudio
+
+## `R` basics - functions
+
+* `R` uses *functions* to do things.
+
+* Functions take *arguments* to specify how, or to what, to do those things. 
+
+* Example:
+
+    + `read.csv(file="scores.csv")` 
+
+* `read.csv` is a function to import a CSV file and `file` is an argument that specifies which file to import.
+
+
+## `R` basics - running functions
+
+An `R` script is a text file that contains all your `R` code. `R` scripts allow you to save, edit, reproduce and share your code.
+
+Two common ways to run code:
+
+1. From the command line; type the function and hit Enter
+2. In an `R` script; type the name of an R script, hit Enter to execute all code in the script
+
+
+## `R` basics - assignment
+
+* We often need to save a function's result or output. For this we use the assignment operator: ` <- `  
+
+* For example, when you import a CSV file you need to give it a name: 
+
+`scores <- read.csv(file="scores.csv")`   
+ 
+* Now we can use `scores` as an argument to other functions. For example, compute summary statistics for each column in the data:
+
+`summary(scores)` 
+
+* **Note**: Use `Alt + -` (Win) or `Option + -` (Mac) in RStudio to quickly insert ` <- `. You can also use `=` for assignment.
+
+
+## `R` basics - packages
+
+- All functions belong to *packages*. The `read.csv` function is in the `utils` package.
+
+- `R` comes with about 30 packages (called "base `R`"), but as of January 2017 there are close to 10,000 user-contributed packages! 
+
+- Example: `ggplot2` is a popular package that adds functions for creating graphs in a different way than what base `R` provides
+
+- To use functions in a package, the package must be installed and loaded. (They're free)
+
+- You only _install_ a package once. 
+
+- You _load_ a package whenever you want to use its functions. 
+
+## Useful ways of getting data into R
+
+- For delimiter-separated files, use `readr` package, <https://cran.r-project.org/web/packages/readr/README.html>
+- For reading/writing Excel files, use `openxlsx` package, <https://cran.r-project.org/web/packages/openxlsx/index.html>. Alternatively, `readxl` by Hadley Wickham for Excel reading only, <https://github.com/tidyverse/readxl>
+- For reading data from Clipboard, use `psych::read.clipboard.tab` or 
+- For fixed-width files, use `read.fwf` or `readr::read_fwf` funcitons
+
+
+
