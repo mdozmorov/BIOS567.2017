@@ -10,10 +10,10 @@ visible: 1
 
 - R base graphics, dplyr, ggplot2
 
-[Slides: Dplyr and ggplot2 basics](/presentations/01b_Graphics_dplyr/01b_Graphics_dplyr.pdf)  
-[Tutorial: dplyr_ggplot2.R](presentations/01b_Graphics_dplyr/dplyr_ggplot2.R)  
-[Tutorial: Base R graphics](presentations/01b_Graphics_dplyr/RGraphics.zip)  
-[Tutorial: ggplot2](presentations/01b_Graphics_dplyr/ggplot2.zip)  
+[Slides: Dplyr and ggplot2 basics]({{site.baseurl}}/presentations/01b_Graphics_dplyr/01b_Graphics_dplyr.pdf)  
+[Tutorial: dplyr_ggplot2.R]({{site.baseurl}}/presentations/01b_Graphics_dplyr/dplyr_ggplot2.R)  
+[Tutorial: Base R graphics]({{site.baseurl}}/presentations/01b_Graphics_dplyr/RGraphics.zip)  
+[Tutorial: ggplot2]({{site.baseurl}}/presentations/01b_Graphics_dplyr/ggplot2.zip)  
 
 ## References
 
