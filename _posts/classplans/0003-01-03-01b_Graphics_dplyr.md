@@ -5,12 +5,15 @@ title: "Week 2.1 - R graphics, ggplot2, dplyr"
 slides: ""
 tags:
  - 01b_Graphics_dplyr
-visible: 0
+visible: 1
 ---
 
 - R base graphics, dplyr, ggplot2
 
-[Slides](/presentations/00_Intro/00_Intro.pdf)
+[Slides: Dplyr and ggplot2 basics](/presentations/01b_Graphics_dplyr/01b_Graphics_dplyr.pdf)  
+[Tutorial: dplyr_ggplot2.R](presentations/01b_Graphics_dplyr/dplyr_ggplot2.R)  
+[Tutorial: Base R graphics](presentations/01b_Graphics_dplyr/RGraphics.zip)  
+[Tutorial: ggplot2](presentations/01b_Graphics_dplyr/ggplot2.zip)  
 
 ## References
 
