@@ -33,7 +33,7 @@ Good science is built on research that may be reproduced (or copied) by other re
 
 * Make figures, tables, and statistics the result of scripts
 
-* Keep an entire project in a single directory that is supported 
+* Keep an entire project in a single directory that is version controlled 
 
 ## Keeping History of Changes
 <div class="columns-2">
@@ -59,7 +59,7 @@ Version control is the only reasonable way to keep track of changes in code, man
 
 * Facilitates reproducibility
 
-* Faster recover from errors
+* Faster recovery from errors
 
 * Easier collaborations
 
