@@ -38,3 +38,5 @@ visible: 1
 - Exploratory Data Analysis with R graphics by Roger Peng, [https://www.youtube.com/playlist?list=PLjTlxb-wKvXPhZ7tQwlROtFjorSj9tUyZ](https://www.youtube.com/playlist?list=PLjTlxb-wKvXPhZ7tQwlROtFjorSj9tUyZ), [his other video R tutorials](https://www.youtube.com/user/rdpeng/playlists)
 
 - Introduction to Data Visualization with R and ggplot2, [https://www.youtube.com/watch?v=49fADBfcDD4&t=](https://www.youtube.com/watch?v=49fADBfcDD4&t=)
+
+- "Data Visualization for Social Science", A practical introduction with R and ggplot2, free book by Kieran Healy, Duke University [http://socviz.co/](http://socviz.co/)
