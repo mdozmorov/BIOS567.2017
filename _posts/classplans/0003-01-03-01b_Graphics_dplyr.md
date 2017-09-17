@@ -1,7 +1,7 @@
 ---
 categories:
  - weekly
-title: "R graphics, ggplot2, dplyr"
+title: "3 - R graphics, ggplot2, dplyr"
 slides: ""
 tags:
  - 01b_Graphics_dplyr
