@@ -1,0 +1,116 @@
+---
+title: "Microarray databases"
+author: "Mikhail Dozmorov"
+date: "Fall 2017"
+output:
+  ioslides_presentation:
+    css:
+    - ../css/fonts.css
+    - ../css/custom.css
+    transition: faster
+    widescreen: yes
+  beamer_presentation:
+    colortheme: dolphin
+    fig_caption: no
+    fig_height: 6
+    fig_width: 7
+    fonttheme: structurebold
+    theme: AnnArbor
+---
+
+## GEO, Gene Expression Omnibus
+
+<https://www.ncbi.nlm.nih.gov/geo/>
+
+<center>
+![](img/GEO.png)
+</center>
+
+## GEO Structure {.larger}
+
+- **Platform** (GPL) - Annotation the technology and the features
+
+- **Sample** (GSM) - Submitter-supplied sample data
+
+- **Series** (GSE) - A collection of biologically- and statistically- comparable samples processed using the same platform
+
+- **DataSets** (GDS) - Data collections assembled by GEO staff.
+
+## GEO Structure
+
+<center>
+![](img/GEO2.png)
+</center>
+
+## Platform page  {.larger}
+
+<https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL570>
+
+Platform details:
+
+- Description
+- Type
+- Organism
+- Manufacturer
+- Related samples and series
+
+## Sample page {.larger}
+
+<https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM543663>
+
+Sample details:
+
+- Description
+- Type
+- Organism
+- Source
+- Related platforms and series
+
+## Sample data preview | Field description, truncated view, total rows
+
+<center>
+![](img/GEO3.png)
+</center>
+
+## Series page {.larger}
+
+<https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE21862>
+
+Series details:
+
+- Biological sample summary
+- Design summary
+- Publication information
+- Related platforms and samples
+
+## Search DataSet or Gene profile  {.larger}
+
+<center>
+![](img/GEO4.png)
+</center>
+
+&nbsp;
+
+- Datasets: **experiment-centric** view and analysis
+- Gene profiles: **gene-centric** view
+
+<https://www.ncbi.nlm.nih.gov/>
+
+## GEO DataSet analysis
+
+<https://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS987>
+
+<center>
+![](img/GEO5.png)
+</center>
+
+## ArrayExpress
+
+<https://www.ebi.ac.uk/arrayexpress/>
+
+<center><img src="img/ArrayExpress.png" height="270px" /></center>
+
+&nbsp;
+
+... and more <https://en.wikipedia.org/wiki/Microarray_databases>, <https://datamed.org/>
+
