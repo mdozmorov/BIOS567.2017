@@ -14,6 +14,8 @@ visible: 1
 [R: Install Bioconductor]({{site.baseurl}}/presentations/04_Bioconductor/Install_Bioconductor.Rmd)  
 [R: ExpressionSet]({{site.baseurl}}/presentations/04_Bioconductor/eSet.Rmd)  
 [R: Biomart]({{site.baseurl}}/presentations/04_Bioconductor/biomaRt.R)  
+[R: Annotation]({{site.baseurl}}/presentations/04_Bioconductor/Annotation.Rmd)  
+
 
 ## References
 
