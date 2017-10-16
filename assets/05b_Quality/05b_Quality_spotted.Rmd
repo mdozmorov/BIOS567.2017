@@ -74,6 +74,14 @@ Should be done before any microarray/sequencing experiment
 ![](img/agilent.png)
 </center>
 
+## RIN - RNA Integrity number {.larger}
+
+- Bayesian learning algorithm trained on many electropherograms
+- Ranges from 1 (most degraded) to 10 (least degraded)
+- Measured by Agilent 2100 Bioanalyzer
+
+https://en.wikipedia.org/wiki/RNA_integrity_number
+
 ## Levels of Quality Control {.larger}
 
 - **Spot/Probe level**: poor quality of gene expression measurement on one particular array;
