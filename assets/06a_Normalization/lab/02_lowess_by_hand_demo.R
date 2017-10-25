@@ -21,7 +21,7 @@ Alcohol[50]		# y value
 
 distance <- abs(Color - Color[50])	# Only dist along x axis to all otherpoints
 
-# Consider neighborhood span 50% of the data, then k = 50
+# Consider neighborhood span 50 neighbor points of the data, then k = 50
 neighbor <- ifelse(rank(distance) <= 50, 1, 0) # Ranks of the distances within 50%
 
 points( Color[neighbor == 1], Alcohol[neighbor == 1], pch = 19)
@@ -32,7 +32,8 @@ distance[50] # Distance to our target point is 0
 rank(distance)
 rank(distance)[50] # Rank to out target point is 1
 
-delta.50 <- max( distance[neighbor == 1] ) # Largest distance between X0 and the points in the neighborhood
+# Largest distance between X0 and the points in the neighborhood
+delta.50 <- max( distance[neighbor == 1] ) 
 delta.50
 
 u <- ifelse( neighbor==1, distance/delta.50, NA ) # Calculate u
@@ -40,6 +41,8 @@ u <- ifelse( neighbor==1, distance/delta.50, NA ) # Calculate u
 weight <- ifelse( u >= 0 & u < 1, (1 - u^3)^3, 0 ) # Calculate W depending on u
 
 cbind( distance, neighbor, u, weight ) # Show it all side-by-side
+combined_data <- data.frame( distance, neighbor, u, weight, stringsAsFactors = FALSE) # Show it all side-by-side
+combined_data[45:55, ]
 
 local.50 <- lm( Alcohol ~ Color, x = TRUE, weights = weight )	# weighted linear regression
 abline(local.50)
@@ -74,6 +77,7 @@ names(out)
 
 # NOTE: You must sort the data, 
 # Sort the x's, then take the fitted values and sort THEM by the x's.
+plot(Color, Alcohol)
 lines( sort(out$x), out$fitted[order(out$x)], col = "red")
 
 

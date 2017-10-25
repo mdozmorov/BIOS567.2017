@@ -1,5 +1,7 @@
 # Quantile normalization, motivated by quantile-quantile plots
+rm(list = ls())
 data(USArrests)
+?USArrests
 attach(USArrests)
 names(USArrests)
 ?qnorm
@@ -11,6 +13,7 @@ qqnorm(Murder)
 
 # QUANTILE normalization using the Affy data
 library(affy)
+setwd("/Users/mdozmorov/Documents/Work/Teaching/BIOS567.2017/assets/05b_Quality/lab/data_affy")
 list.celfiles()
 Lung <- read.affybatch(filenames = list.celfiles(pattern = "REP*"))  # Lung cancer samples from the same individual
 

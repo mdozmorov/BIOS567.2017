@@ -1,6 +1,6 @@
 ### Affymetrix normalization methods ###
 library(affy)
-setwd("data_affy")
+setwd("/Users/mdozmorov/Documents/Work/Teaching/BIOS567.2017/assets/05b_Quality/lab/data_affy")
 list.celfiles()
 Lung <- read.affybatch(filenames = list.celfiles(pattern = "REP*"))  # Lung cancer samples from the same individual
 pData(Lung)
@@ -34,6 +34,7 @@ abline(h = 0)
 # Built-in global Normalization - Just a scaling method in Affy: Affy
 # the Easy Way:
 ?normalize
+normalize.methods(Lung)
 Lung.scale <- normalize(Lung, method = "constant")
 Lung.scale
 

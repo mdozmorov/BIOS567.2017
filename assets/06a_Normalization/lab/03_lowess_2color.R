@@ -1,5 +1,5 @@
 #	 Fitting LOWESS to Gene Expression Data: a 2 channel microarray
-setwd("data_spotted/")
+setwd("/Users/mdozmorov/Documents/Work/Teaching/BIOS567.2017/assets/05b_Quality/lab/data_spotted")
 dir(pattern = "txt")
 file <- dir(pattern = "txt")[1:2]
 file
