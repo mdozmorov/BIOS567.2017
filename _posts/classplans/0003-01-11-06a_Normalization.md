@@ -15,11 +15,8 @@ visible: 1
 - `lab/01_lowess_curve_fit_demo.R` - Non-linear curve fitting exercise
 - `lab/02_lowess_by_hand_demo.R` - Manually fitting Loess curves on `wine` dataset
 - `lab/03_lowess_2color.R` - Loess on two-color arrays. MA diagnostic plots, global and print-tip loess normalization. Uses `data_spotted` files from `05b_Quality`.
-
-<!--
 - `lab/04_normalization_affy.R` - quantile normalization of one-color array. Uses `data_affy` files from `05b_Quality`.
 - `lab/05_quantile_demo.R` - QQplot manual demo, affy quantile normalization. Uses `data_affy` files from `05b_Quality`.
--->
 
 ## References
 
