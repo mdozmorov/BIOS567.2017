@@ -471,7 +471,8 @@ For ChIP-chip:
 – CisGenome, http://www.biostat.jhsph.edu/~hji/cisgenome/
 – MAT, http://liulab.dfci.harvard.edu/MAT/
 
-CNVarrays:  
+## CNVarrays
+
 – Affymetrix:  
   - APT: uses a hidden Markov model, https://www.thermofisher.com/us/en/home/life-science/microarray-analysis/microarray-analysis-partners-programs/affymetrix-developers-network/affymetrix-power-tools.html  
   - R package VanillaICE: HMM based.   https://www.bioconductor.org/packages/release/bioc/html/VanillaICE.html
@@ -479,6 +480,8 @@ CNVarrays:
 – Illumina:  
   - QuantiSNP: https://sites.google.com/site/quantisnp/  
   - PennCNV: http://penncnv.openbioinformatics.org/en/latest/  
+
+CNA profiles from CGH arrays were generated using CGH-Explorer software (http://heim.ifi.uio.no/bioinf/Projects/CGHExplorer/), using the program’s piecewise constant fit (PCF) algorithm with the following set of parameters: least allowed deviation = 0.3; least allowed aberration size = 30; winsorize at quantile = 0.001; penalty = 12; threshold = 0.01.
 
 ## Tiling arrays Summary {.larger}
 
