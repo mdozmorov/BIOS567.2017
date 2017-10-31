@@ -19,6 +19,22 @@ title: Microarray databases
 
 # GEO DataSets
 
+Selected datasets used in Nguyen, Tin, Rebecca Tagett, Diana Diaz, and Sorin Draghici. “A Novel Approach for Data Integration and Disease Subtyping.” Genome Research, October 24, 2017, gr.215129.116. https://doi.org/10.1101/gr.215129.116. Available as RData files from "PINS: A novel method for data integration and disease subtyping", [http://www.cs.wayne.edu/tinnguyen/PINS/PINS.html](http://www.cs.wayne.edu/tinnguyen/PINS/PINS.html)
+
+- Gene expression differences between adenocarcinoma and squamous cell carcinoma in human NSCLC, [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10245](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE10245). GSE10245 has a total of 58 lung cancer samples (40 adenocarcinomas and 18 squamous cell carcinomas).
+- Expression data for early stage NSCLC, [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE19188](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE19188). GSE19188 consists of 91 tumor samples (45 adenocarcinomas, 19 large cell carcinomas, and 27 squamous cell carcinomas).
+- SBV - Gene Expression Profiles of Lung Cancer Tumors - Adenocarcinomas and Squamous Cell Carcinomas, [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43580](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE43580). GSE43580 includes 150 tumor samples (77 adenocarcinomas and 73 squamous cell carcinomas).
+- Characterisation of gene expression changes in T cells from patients presenting with AML compared with healthy T cells, [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE14924](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE14924). 
+- Gene array prediction of AML transformation in MDS, [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE15061](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE15061). GSE15061 include 366 leukemia related samples (202 acute myeloid leukemias and 164 myelodysplastic syndromes).
+
+- AML2004, from Jean-Philippe Brunet, Pablo Tamayo, Todd Golub, Jill Mesirov "Metagenes and molecular pattern discovery using matrix factorization" Proc. Natl. Acad. Sci. USA 2004 101: 4164-4169. Published: 2004.03.22 [https://portals.broadinstitute.org/cgi-bin/cancer/publications/pub_paper.cgi?mode=view&paper_id=89](https://portals.broadinstitute.org/cgi-bin/cancer/publications/pub_paper.cgi?mode=view&paper_id=89). Subtype information of AML2004 is described in Brunet et al., and is available in the file “ALL AML samples.txt” on the website. AML2004 includes 38 leukemia samples (11 acute myeloid leukemia, 19 acute lymphoblastic leukemia B cell, and 8 T cell).
+
+- BRAIN2002, Gene Expression-Based Classification and Outcome Prediction of Central Nervous System Embryonal Tumors, [https://archive.broadinstitute.org/mpr/CNS/](https://archive.broadinstitute.org/mpr/CNS/). The subtype information of this dataset is described in Pomeroy et al. (data set A) and is available in the file “Brain samples clinical table.xls” on the website. This dataset consists of 42 samples (10 meduloblastomas, 10 malignant gliolas, 10 atypical teratoid/rhaboid tumors, 4 normal cerebellums, and 8 primitive neuroectodermal tumors).
+
+- LUNG2001, Classification of Human Lung Carcinomas by mRNA Expression Profiling Reveals Distinct Adenocarcinoma Sub-classes, [http://archive.broadinstitute.org/mpr/lung/](http://archive.broadinstitute.org/mpr/lung/). Subtype information of Lung2001 is available in the file “datasetA scans.txt” on the website. This dataset consists of 237 lung cancer samples (190 adenocarcinomas, 21 squamous cell carcinomas, 20 carcinoid, and 6 small-cell lung carcinomas).
+
+- The Molecular Taxonomy of Breast Cancer International Consortium (METABRIC) breast cancer dataset consists of a discovery cohort (997 patients) and a validation cohort (995 patients). Available at the European Genome-Phenome Archive (https: //www.ebi.ac.uk/ega/) with accession IDs: EGAD00010000210 (expression data, discovery), EGAD00010000214 (CNV, discovery), EGAD00010000211 (expression data, validation), and EGAD00010000216 (CNV, validation).
+
 136 datasets used by Hung, Jui-Hung, Tun-Hsiang Yang, Zhenjun Hu, Zhiping Weng, and Charles DeLisi. “Gene Set Enrichment Analysis: Performance Evaluation and Usage Guidelines.” Briefings in Bioinformatics 2012, Supplementary Data 1 [http://bib.oxfordjournals.org/content/13/3/281/suppl/DC1](http://bib.oxfordjournals.org/content/13/3/281/suppl/DC1)
 
 [GDS1020](https://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS1020)
