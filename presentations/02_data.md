@@ -17,24 +17,7 @@ title: Microarray databases
 
 - [https://github.com/ramhiser/datamicroarray](https://github.com/ramhiser/datamicroarray) - A collection of small-sample, high-dimensional microarray data sets to assess machine-learning algorithms and models.
 
-# Selected GEO datasets
-
-[GSE62924](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62924) - Prenatal arsenic exposure and the epigenome: Identifying sites of 5-methyl cytosine alterations that predict functional changes in gene expression in newborn cord blood and subsequent birth outcomes. **Illumina HumanMethylation450 BeadChip**. Rojas D, Rager JE, Smeester L, Bailey KA et al. Prenatal arsenic exposure and the epigenome: identifying sites of 5-methylcytosine alterations that predict functional changes in gene expression in newborn cord blood and subsequent birth outcomes. Toxicol Sci 2015. PMID: 25304211
-
-[GSE48354](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48354) - Prenatal arsenic exposure and the epigenome: altered gene expression profiles in newborn cord blood. Affymetrix Human Gene 2.0 ST Array. Rager JE, Bailey KA, Smeester L, Miller SK et al. Prenatal arsenic exposure and the epigenome: altered microRNAs associated with innate and adaptive immune signaling in newborn cord blood. Environ Mol Mutagen 2014. PMID: 24327377
-
-[GSE47977](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47977) - Ozone Exposure Alters MicroRNA Expression Profiles in Humans. **Agilent-016436 Human miRNA Microarray 1.0**. Fry RC, Rager JE, Bauer R, Sebastian E et al. Air toxics and epigenetic effects: ozone altered microRNAs in the sputum of human subjects. Am J Physiol Lung Cell Mol Physiol 2014. PMID: 24771714
-
-[GSE21862](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE21862) - Gene expression on 144 arrays representing 125 workers exposed to a range of benzene exposures. **Illumina humanRef-8 v2.0 expression beadchip**. McHale CM, Zhang L, Lan Q, Vermeulen R et al. Global gene expression profiling of a population exposed to a range of benzene levels. Environ Health Perspect 2011. PMID: 21147609
-
-[GSE1397](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE1397) - the data on Down Syndrome Trisomy 21. **Affymetrix GeneChipTM Human U133A**. Mao R, Wang X, Spitznagel EL Jr, Frelin LP et al. Primary and secondary transcriptional effects in the developing human Down syndrome brain and heart. Genome Biol 2005. PMID: 16420667
-
-- [GSE15376](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE15376) - Molecular characterization of 52 breast cancer cell lines. aCHG and microarray gene expression. Kao, Jessica, Keyan Salari, Melanie Bocanegra, Yoon-La Choi, Luc Girard, Jeet Gandhi, Kevin A. Kwei, et al. “Molecular Profiling of Breast Cancer Cell Lines Defines Relevant Tumor Models and Provides a Resource for Cancer Gene Discovery.” PloS One 4, no. 7 (July 3, 2009): e6146. doi:10.1371/journal.pone.0006146. http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006146
-
-
-- `datamicroarray` R package - A collection of small-sample, high-dimensional microarray data sets to assess machine-learning algorithms and models. [https://github.com/ramhiser/datamicroarray](https://github.com/ramhiser/datamicroarray)
-
-# More GEO DataSets
+# GEO DataSets
 
 136 datasets used by Hung, Jui-Hung, Tun-Hsiang Yang, Zhenjun Hu, Zhiping Weng, and Charles DeLisi. “Gene Set Enrichment Analysis: Performance Evaluation and Usage Guidelines.” Briefings in Bioinformatics 2012, Supplementary Data 1 [http://bib.oxfordjournals.org/content/13/3/281/suppl/DC1](http://bib.oxfordjournals.org/content/13/3/281/suppl/DC1)
 
