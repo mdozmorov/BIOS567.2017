@@ -32,9 +32,6 @@ knit_hooks$set(source = function(x, options){
 })
 ```
 
-
-# Differential expression in microarrays studies
-
 ## General framework for differential expression {.larger}
 
 - Linear models
@@ -260,19 +257,21 @@ where $S_{g\_limma}^{2}$ is the posterior variance.
     - Continuous variables: dosage of a drug  
     - Continuous discrete variables  
         - 2 groups, 3 drug doses — do the drugs affect the groups differently?
-        
-- limma on a time course, https://github.com/jennybc/stat540_2014/blob/master/seminars/seminar06_highVolumeLinearModelling.rmd
 
-## Limma method
+<div style="font-size: small;">
+limma on a time course, https://github.com/jennybc/stat540_2014/blob/master/seminars/seminar06_highVolumeLinearModelling.rmd
+</div>
+
+## Limma method {.smaller}
 
 - Lönnstedt, Ingrid, and Terry Speed. “REPLICATED MICROARRAY DATA.” Statistica Sinica 12, no. 1 (2002): 31–46. http://www.jstor.org/stable/24307034. - Empirical Bayes method for analyzing microarray replicates. Issues with simple approaches, proposed B statistics - a Bayes log posterior odds with two hyperparameters in the inverse gamma prior for the variances, and a hyperparameter in the normal prior of the nonzero means. Appendix - detailed definitions, derivations, and solutions.
 
-- Smyth, Gordon K. “Linear Models and Empirical Bayes Methods for Assessing Differential Expression in Microarray Experiments.” Statistical Applications in Genetics and Molecular Biology 3 (2004): Article3. doi:10.2202/1544-6115.1027. [PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.315.2066&rep=rep1&type=pdf) - Linear models for differential analysis, moderated t-statistics via shrinkage of sample variance. Empirical estimation of Bayesian prior variance distribution and shrinkage hyperparameters.
+- Smyth, Gordon K. “Linear Models and Empirical Bayes Methods for Assessing Differential Expression in Microarray Experiments.” Statistical Applications in Genetics and Molecular Biology 3 (2004): Article3. doi:10.2202/1544-6115.1027. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.315.2066&rep=rep1&type=pdf - Linear models for differential analysis, moderated t-statistics via shrinkage of sample variance. Empirical estimation of Bayesian prior variance distribution and shrinkage hyperparameters.
 
-- Phipson, Belinda, Stanley Lee, Ian J. Majewski, Warren S. Alexander, and Gordon K. Smyth. “Robust Hyperparameter Estimation Protects against Hypervariable Genes and Improves Power to Detect Differential Expression.” The Annals of Applied Statistics 10, no. 2 (June 2016): 946–63. doi:10.1214/16-AOAS920. [PDF](https://projecteuclid.org/download/pdfview_1/euclid.aoas/1469199900) - An extension of differential analysis using linear modeling and empirical Bayes by windsorizing outliers in estimating sample distribution. 
+- Phipson, Belinda, Stanley Lee, Ian J. Majewski, Warren S. Alexander, and Gordon K. Smyth. “Robust Hyperparameter Estimation Protects against Hypervariable Genes and Improves Power to Detect Differential Expression.” The Annals of Applied Statistics 10, no. 2 (June 2016): 946–63. doi:10.1214/16-AOAS920. https://projecteuclid.org/download/pdfview_1/euclid.aoas/1469199900 - An extension of differential analysis using linear modeling and empirical Bayes by windsorizing outliers in estimating sample distribution. 
 
-## Extensions of Limma method
+## Extensions of Limma method {.smaller}
 
 - Sartor, Maureen A., Craig R. Tomlinson, Scott C. Wesselkamper, Siva Sivaganesan, George D. Leikauf, and Mario Medvedovic. “Intensity-Based Hierarchical Bayes Method Improves Testing for Differentially Expressed Genes in Microarray Experiments.” BMC Bioinformatics 7 (December 19, 2006): 538. https://doi.org/10.1186/1471-2105-7-538. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-7-538 - Intensity-Based Moderated T-statistic (IBMT). Empirical Bayes approach allowing for the relationship between variance and gene signal intensity (estimated with loess). Brief description of previous methods (Smyth, Cyber-T). Details of Smyth hierarchical model and moderated t-statistics, estimation of hyperparameters with implementation of variance-signal. Software at http://eh3.uc.edu/ibmt/. 
 
-- Lianbo Yu et al., “Fully Moderated T-Statistic for Small Sample Size Gene Expression Arrays,” Statistical Applications in Genetics and Molecular Biology 10, no. 1 (September 15, 2011), https://doi.org/10.2202/1544-6115.1701. https://www.degruyter.com/view/j/sagmb.2011.10.issue-1/1544-6115.1701/1544-6115.1701.xml - Third implementation of moderated t-statistics. First is Smyth 2004 model assuming $d_{0g}$ and $s_{0g}^2$ constant, second is IBMT (intensity-based moderated t) Sartor 2006 allows varying $s_{0g}^2$ with gene expression, third is the present FMT (fully moderated t) model allowing varying d_{0g} and s_{0g}^2. Description of Smyth hierarchical model, estimation of hyperparameters. Adjusted log variances are fit with loess. Goal - increase in power - is demonstrated on simulated data.
+- Lianbo Yu et al., “Fully Moderated T-Statistic for Small Sample Size Gene Expression Arrays,” Statistical Applications in Genetics and Molecular Biology 10, no. 1 (September 15, 2011), https://doi.org/10.2202/1544-6115.1701. https://www.degruyter.com/view/j/sagmb.2011.10.issue-1/1544-6115.1701/1544-6115.1701.xml - Third implementation of moderated t-statistics. First is Smyth 2004 model assuming $d_{0g}$ and $s_{0g}^2$ constant, second is IBMT (intensity-based moderated t) Sartor 2006 allows varying $s_{0g}^2$ with gene expression, third is the present FMT (fully moderated t) model allowing varying $d_{0g}$ and $s_{0g}^2$. Description of Smyth hierarchical model, estimation of hyperparameters. Adjusted log variances are fit with loess. Goal - increase in power - is demonstrated on simulated data.
