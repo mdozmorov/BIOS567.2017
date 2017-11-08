@@ -56,6 +56,7 @@ median.polish(test)
 setwd("/Users/mdozmorov/Documents/Work/Teaching/BIOS567.2017/assets/05b_Quality/lab/data_affy")
 library(affy)
 Lung <- read.affybatch(filenames=list.celfiles(pattern = "REP"))
+Lung
 
 pm <- pm(Lung,"205586_x_at")
 pm

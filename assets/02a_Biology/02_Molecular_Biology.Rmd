@@ -460,10 +460,11 @@ http://vcell.ndsu.nodak.edu/animations/mrnaprocessing/movie-flash.htm
 - In translation, the mRNA serves as a template for protein synthesis. 
 - The sequence of bases along the mRNA is thus converted into a string of amino acids. 
 - Consecutive non-overlapping triplets of bases (called codons) act as the code to specify the particular amino acids
-- There are 64 possible codons but only 20 amino acids. 
+- There are $4^3=64$ possible codons but only 20 amino acids. 
 - There is room for redundancy - this provides a safeguard against small errors that might occur during transcription. 
 
 http://vcell.ndsu.nodak.edu/animations/translation/movie-flash.htm
+
 
 ## Translation code
 
