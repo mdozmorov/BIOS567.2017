@@ -95,6 +95,23 @@ factorial(12)/ (factorial(6) * factorial(6))
 
 Assume we are testing $H_1, H_2, ..., H_m.$ $m_0$ - # of true null hypotheses
 
+|                            | Declared non-significant | Declared significant |       |
+|:--------------------------:|:------------------------:|:--------------------:|------:|
+| # True null hypothesis     |   **U**                  |    **T**             | m - R |
+| # Non-true null hypothesis |   **V**                  |    **S**             |     R |
+|                            |     m0                   |    m-m0              |       |
+
+- **U, S** -	True negatives/positives - unobservable random variable
+- **V** - 		False positives [Type I errors] - unobservable random variable
+- **T** - 		False negatives [Type II errors ] - unobservable random variable
+- **R** -		  All positives (# of rejected null hypotheses)	- observable 
+
+
+<!-- Wrong
+## Results of Multiple hypothesis testing
+
+Assume we are testing $H_1, H_2, ..., H_m.$ $m_0$ - # of true null hypotheses
+
 |               | null hypo. | null hypo. |       |
 |:-------------:|:----------:|:----------:|------:|
 |               |  # false   |   # true   |       |
@@ -106,6 +123,9 @@ Assume we are testing $H_1, H_2, ..., H_m.$ $m_0$ - # of true null hypotheses
 - **V** - 		False positives [Type I errors] - unobservable random variable
 - **T** - 		False negatives [Type II errors ] - unobservable random variable
 - **R** -		  All positives (# of rejected null hypotheses)	- observable 
+-->
+
+
 
 ## Error rates {.larger}
 
@@ -205,7 +225,7 @@ $$1-\sqrt[22,283]{1-0.05}=0.000002302$$
 
 ## Multiple Hypothesis Testing: Simes method {.larger}
 
-- A modified Bonferroni procedure, $p_{Simes}=min\{n*p_r/r\}$, where $r=1,2,..,n$.
+- A modified Bonferroni procedure, $p_{Simes} \le \frac{j*\alpha}{n}$, where $j=1,2,..,n$.
 
 - Simes, R. J. “An Improved Bonferroni Procedure for Multiple Tests of Significance.” Biometrika 73 (1986): 751–54. doi:10.1093/biomet/73.3.751. 
 
@@ -252,7 +272,7 @@ $$FDR \approx \frac{false\,positives}{called\,significant} = \frac{V}{R}$$
 
 Two procedures for controlling FDR:
 
-- Fix the acceptable FDR level $\sigma$ a priori, then find a data-dependent threshold so that the $FDR \ge \sigma$. (Benjamini & Hochberg)
+- Fix the acceptable FDR level $\sigma$ _a priori_, then find a data-dependent threshold so that the $FDR \ge \sigma$. (Benjamini & Hochberg)
 - Fix the threshold rule and then form an estimate of the FDR whose expectation is $\ge$ the FDR rule over the significance region. (Storey)
 
 ## Storey’s positive FDR (pFDR) {.larger}
@@ -293,7 +313,7 @@ Martin Krzywinski	& Naomi Altman "**Points of significance: Comparing samples—
 
 http://varianceexplained.org/statistics/interpreting-pvalue-histogram/
 
-## Increase power - Filtering
+## Increase power - Filtering {.larger}
 
 Three filtering methods 
 
@@ -303,14 +323,14 @@ Three filtering methods
 
 All three filtering methods reduce the number of hypothesis tests to be performed.
 
-##  Mean Filtering
+##  Mean Filtering {.larger}
 
 - Removes the genes with low mean gene signal values
 - The genes with mean signal less than a fixed cut‐off value $C$ are filtered out.
 - The cut‐off $C$ is chosen based on background noise level.
 - Removes non‐expressed genes or genes with low signal values at background noise level.
 
-##  Mean Filtering
+##  Mean Filtering {.larger}
 
 Issues  
 
@@ -324,7 +344,7 @@ Issues
 - The cut‐off percentage $X$ is arbitrarily determined by the investigator.
 - Removes genes at different expression levels
 
-##  Variance Filtering
+##  Variance Filtering {.larger}
 
 Issues
 
@@ -333,7 +353,7 @@ Issues
 - Differentially expressed genes with low variances estimates being filtered out and a lower number of true positives.
 - Uses total gene variance rather than between/within group variance
 
-##  Threshold Filtering
+##  Threshold Filtering {.larger}
 
 - Threshold Filtering Method aims to filter out only non‐ expressed genes.
 - For sample size up to 5 per group, genes are filtered out only if one or no samples (across groups) have a signal greater than the background cut‐off value.
