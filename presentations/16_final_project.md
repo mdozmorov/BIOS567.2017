@@ -30,8 +30,16 @@ Your project report should be written in R/Markdown format, and compiled as an H
     - A detailed description of quality assessment measures examined and a results section detailing the results of the quality evaluation;
     - A detailed description of the normalization methods used to process your raw microarray data.
     - A detailed description of expression summaries applied to your dataset.
-    - Additional methods and results for the unsupervised and supervised learning methods applied to your dataset. Be sure to include a complete description of all methods used in your paper.
-
+    - Batch effect correction methods. Describe and apply both `ComBat` (if batch is known) and `sva` (assuming batches are unknown) methods.  
+        - Display the data using Principal Components Analysis before-after batch correction.  
+        - Use different hierarchical clustering methods to cluster top 10% of the most highly variable genes before-after batch correction, describe your observations
+    - Additional methods and results for the unsupervised and supervised learning methods applied to your dataset. Be sure to include a complete description of all methods used in your paper.  
+        - Report differentially expressed genes between at least two conditions. Make sure to include all relevant covariates. 
+        - Describe filtering steps, multiple testing correction methods, and their appropriatedness for the current study
+        - Display boxplots of top 10 differentially expressed genes between the conditions
+        - Compare the results with those reported in the original study, if relevant
+        - Perform functional enrichment analysis using GSEA and overrepresentation analysis. Use three domains of gene ontologies, and KEGG pathways.
+        
 3. A **Results** section providing a thorough description of your results. Tables and figures should be numbered and captioned.
 4. A **Discussion/Conclusion** section. Either your Introduction or Discussion section should describe how your analysis of the dataset differs from what the authors reported in their published paper.
 5. **References**.
