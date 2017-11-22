@@ -33,6 +33,28 @@ This tutorial assumes you're brand new to `R`. The goal is to learn getting the 
 - https://www.r-project.org/
 - Easy interface with RStudio
 
+## An Updated History of R
+
+1992: R development begins as a research project in Auckland, NZ by Robert Gentleman and Ross Ihaka 
+1993: First binary versions of R published at Statlib [see update, below]
+1995: R first distributed as open-source software, under GPL2 license
+1997: R core group formed
+1997: CRAN founded (by Kurt Jornik and Fritz Leisch)
+1999: The R website, r-project.org, founded
+1999: First in-person meeting of R Core team, at inaugural Directions in Statistical Computing conference, Vienna
+2000: R 1.0.0 released (February 29) 
+2000: John Chambers, recipient of the 1998 ACM Software Systems Award for the S language, joins R Core
+2001: R News founded (later to become the R Journal)
+2003: R Foundation founded
+2004: First UseR! conference (in Vienna)
+2004: R 2.0.0 released
+2009: First edition of the R Journal
+2013: R 3.0.0 released
+2015: R Consortium founded, with R Foundation participation
+2016: New R logo adopted
+
+http://blog.revolutionanalytics.com/2017/10/updated-history-of-r.html
+
 ## `R` basics - functions
 
 * `R` uses *functions* to do things.
