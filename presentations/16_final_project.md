@@ -45,4 +45,4 @@ Your project report should be written in R/Markdown format, and compiled as an H
 5. **References**.
 6. **Computational component**: code chunks  as well as any data that can't be recreated with the code must be provided to the instructor so it can be tested. Make sure your code is readable (use `formatR::tidy_app()`) and commented.
 
-Your final project is due Wednesday, December 14th at 9:00am. You will be asked to learn from and grade one of your peer's project, project assignment is due December 14, 9:00pm. Your grades are due to be submitted by e-mail Monday, December 18th, 9:00am.
+Your final project is due Thursday, December 14th at 9:00am. You will be asked to learn from and grade one of your peer's project, project assignment is due December 14, 9:00pm. Your grades are due to be submitted by e-mail Monday, December 18th, 9:00am.
