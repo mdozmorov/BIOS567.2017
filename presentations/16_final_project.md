@@ -21,7 +21,7 @@ See the [data page]({{site.baseurl}}/presentations/02_data/index.html) for the l
 2. Explore the NCBI Gene Expression Omnibus (GEO) database, <http://www.ncbi.nlm.nih.gov/geo/> for the presence of such datasets - chances are you will find a microarray dataset for your condition of interest;
 3. Read the paper accompanying the dataset, and aim to re-create the described results.
 
-Your project report should be written in R/Markdown format, and compiled as an HTML document. Follow the IMRaD format, <http://sokogskriv.no/en/writing/structure/the-imrad-format/>, when describing your project and results. The text content should be limited to 1,000 words, references and results output not counted towards word limit. Address the following points:
+Your project report should be written in R/Markdown format, and compiled as an HTML document. Follow the IMRaD format, <http://sokogskriv.no/en/writing/structure/the-imrad-format/>, when describing your project and results. The text content should be limited to no more than 3,000 words, references and results output not counted towards word limit. Address the following points:
 
 1. A simple and clear description of the dataset you will be using and the research question you are addressing. This should be written in the form of an **Introduction/Background** section(s).
 
@@ -45,4 +45,17 @@ Your project report should be written in R/Markdown format, and compiled as an H
 5. **References**.
 6. **Computational component**: code chunks  as well as any data that can't be recreated with the code must be provided to the instructor so it can be tested. Make sure your code is readable (use `formatR::tidy_app()`) and commented.
 
-Your final project is due Thursday, December 14th at 9:00am. You will be asked to learn from and grade one of your peer's project, project assignment is due December 14, 9:00pm. Your grades are due to be submitted by e-mail Monday, December 18th, 9:00am.
+### Final grading
+
+Review grading policies at [https://mdozmorov.github.io/BIOS567.2017/policies/](https://mdozmorov.github.io/BIOS567.2017/policies/)
+
+- Your final project in the form of your GitHub repository is due Thursday, December 14th at 9:00am.
+- Following the submission, you will be assigned to grade one of your peer's project.  
+    - The peer-to-peer assignment will be send through Blackboard.
+    - Clone your peer's repository on your computer and knit the final project document.
+    - Learn from the code and critically assess each section of the final project (Introduction, each Methods/Results subsections, etc.).
+    - Critically assess each section as "pass", "fail", "marginal", briefly noting the rationale for the assessment.
+    - The goal of your assessment is to learn from the work of others.  
+- Your assessment is due to be submitted through Blackboard on or before Monday, December 18th, 9:00am.
+- The instructor will formally grade each project, taking your assessment into consideration. 
+- The final grades will be entered in the system on or before Tuesday, December 19th, 4:00pm.
