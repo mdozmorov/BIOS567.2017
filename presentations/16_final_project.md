@@ -47,9 +47,10 @@ Your project report should be written in R/Markdown format, and compiled as an H
 
 ### Final grading
 
-Review grading policies at [https://mdozmorov.github.io/BIOS567.2017/policies/](https://mdozmorov.github.io/BIOS567.2017/policies/)
+Review grading policy at [https://mdozmorov.github.io/BIOS567.2017/policies/](https://mdozmorov.github.io/BIOS567.2017/policies/)
 
-- Your final project in the form of your GitHub repository is due Thursday, December 14th at 9:00am.
+- Your final project in the form of your GitHub repository is due on or before Saturday, December 16th at 9:00am.
+<!--
 - Following the submission, you will be assigned to grade one of your peer's project.  
     - The peer-to-peer assignment will be send through Blackboard.
     - Clone your peer's repository on your computer and knit the final project document.
@@ -58,4 +59,5 @@ Review grading policies at [https://mdozmorov.github.io/BIOS567.2017/policies/](
     - The goal of your assessment is to learn from the work of others.  
 - Your assessment is due to be submitted through Blackboard on or before Monday, December 18th, 9:00am.
 - The instructor will formally grade each project, taking your assessment into consideration. 
+-->
 - The final grades will be entered in the system on or before Tuesday, December 19th, 4:00pm.
