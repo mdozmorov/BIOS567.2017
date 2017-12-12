@@ -62,4 +62,6 @@ Review grading policy at [https://mdozmorov.github.io/BIOS567.2017/policies/](ht
 - The instructor will formally grade each project, taking your assessment into consideration. 
 -->
 
+- Your final project will be graded on or before Monday, December 18th, 9:00am
+
 - The final grades will be entered in the system on or before Tuesday, December 19th, 4:00pm.
