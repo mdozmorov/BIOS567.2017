@@ -43,6 +43,27 @@ knitr::opts_chunk$set(echo = FALSE)
 
 **Software**: The R programming environment
 
+## Expectations
+
+What you should expect from the class
+
+- Your learning is a priority
+- There are no stupid questions - ask anything and expect answers
+- You will have feedback on your homeworks
+- You are partners, colleagues in learning, treated professionally
+
+# Expectations
+
+What you are expected to do
+
+- You make attending class a priority
+- You submit your best work for homework: your own work, on time
+- You engage in classroom discussion
+- You learn from the class; you learn to teach yourself programming skills
+- You demonstrate your best professional working ethics (including beyond the class)
+
+
+
 ## Computational Genomics
 
 **Genomics/Bioinformatics (general)**
