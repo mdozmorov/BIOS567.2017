@@ -32,6 +32,37 @@ output:
 - **RefSeq** NM_000059
 - **Ensembl** ENST00000380152
 
+## HUGO Gene Nomenclature Committee (HGNC) Gene Names
+
+This resource lists gene name synonyms, which is useful if you are conducting a comprehensive literature search and need to find articles about a gene that may have been called other names in the past.
+
+https://www.genenames.org/
+
+## Reference Sequences (RefSeq)
+
+- Reference standard
+    - Eukaryotes: genomic, transcript, protein sequences, derived from: 
+        - Computation
+        - Manual curation of submitted data
+        - Collaboration with other experts
+
+- > 69,000 organisms
+    - >7000 viruses, >40,000 prokaryotes, >10,000 eukaryotes
+ 
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702849/
+
+## RefSeq Accession Prefixes
+
+NM_ = mRNA (experimentally supported)
+XM_ = mRNA (predicted model)
+NP_ = protein (experimentally supported)
+XP_ = protein (predicted model)
+NC_ = genomic/chromosome
+NG_ = incomplete genomic assembly
+
+
+https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/?report=objectonly
+
 ## NCBI Gene
 
 https://www.ncbi.nlm.nih.gov/gene
