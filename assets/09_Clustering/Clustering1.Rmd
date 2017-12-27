@@ -430,13 +430,34 @@ http://www.sciencedirect.com/science/article/pii/S1532046410001000
 ## Other decomposition techniques
 
 - Non-negative matrix factorization
-- $A=WH$ ($A$, $W$, $H$ are non-negative)
-- H defined a meta-gene space: similar to eigengenes
-- Classification can be done in the meta-gene space
+- $a_{.j}=\sum_{k=1}^Kw_{.k}h_{kj},\ or\ A=WH$ ($A$, $W$, $H$ are non-negative)
+- A linear, non-negative approximation of the data
+- By not allowing negative entries in $W$ and $H$, NMF enables a non-subtractive combination of parts to form a whole
 
-<center><img src="img/nmf.png" height="300px" /></center>
+<center><img src="img/nmf.png" height="400px" /></center>
 
 Jean-Philippe Brunet et al. PNAS 2004;101:4164-4169
+
+
+## Non-negative matrix factorization (NMF)
+
+- $a_{.j}=\sum_{k=1}^Kw_{.k}h_{kj},\ or\ A=WH$ ($A$, $W$, $H$ are non-negative)
+- $A$ is an $M \times N$ matrix, input gene expression by samples matrix
+- $W$ is an $M \times K$ matrix, contains $K$ basis vectors
+- $H$ is a $K \times N$ matrix, contains the coefficient vectors
+- $H$ defines a meta-gene space: similar to eigengenes
+- Classification can be done in the meta-gene space
+
+## Non-negative matrix factorization (NMF)
+
+- A key feature of NMF is the ability to identify nonsubtractive patterns that together explain the data as a linear combination of its basis vectors. 
+- $A=WH$ ($A$, $W$, $H$ are non-negative)
+- $A$ is an $M \times N$ matrix, input gene expression by samples matrix
+- $W$ is an $M \times K$ matrix, contains $K$ basis vectors
+- $H$ is a $K \times N$ matrix, contains the coefficient vectors
+- The $K$ basis vectors in $W$ can be regarded as the ‘building blocks’ of the data
+- The $K$ coefficient vectors describe how strongly each ‘building block’ is present in the data
+
 
 ## NMF, general formulation
 
@@ -464,8 +485,8 @@ NMF can handle overlapping clusters and provides soft cluster membership indicat
 
 - Many computational methods
     - Cost function $|A-WH|$
-    - Squared error - aka Frobenius norm
-    - Kullback–Leibler divergence
+    - The squared Euclidean error function: $F(W,H)=\parallel A - WH \parallel_F^2$
+    - Kullback–Leibler divergence $D_{KL}(A \parallel \hat{A}) = \sum_{ij}(A_{ij}log\frac{A_{ij}}{\hat{A_{ij}}})$, where $\hat{A}=WH$
 
 - Optimization procedure
     - Most use stochastic initialization, and the results don’t always converge to the same answer
