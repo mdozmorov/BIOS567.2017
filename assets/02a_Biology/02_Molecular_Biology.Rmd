@@ -113,6 +113,32 @@ Drawing of mitosis by Walther Flemming. Flemming, W. Zellsubstanz, Kern und Zell
 ![](img/sex_chromosomes.png)
 </center>
 
+## Chromosome Banding Patterns and Nomenclature
+
+Centromere divides chromosomes into a short arm (p; petit)
+and a long arm (q)
+Centromere is defined by the first band on the short arm (p10)
+and the first band on the long arm (q10)
+Telomeres are present at the termini (pter and qter)
+Each chromosome arm is divided into regions based on landmarks
+(consistent and distinct morphologic area of a chromosome)
+The regions immediately adjacent to the centromere are designated as “1”
+(p1 and q1)
+Region numbers increase distally to the centromere
+Regions are divided into bands and bands into sub-bands
+Xp22.3 = X chromosome, short arm region 2, band 2, sub-band 3
+Band is read as X q two-two point three, not X q twenty-two point three
+
+## Chromosome Banding Patterns and Nomenclature
+
+chromosome_nomenclature.png
+
+## Centromere locations
+
+chromosome_centromeres.png
+
+https://people.rit.edu/rhrsbi/GeneticsPages/Handouts/ChromosomeNomenclature.pdf
+
 ## Karyotype {.larger}
 
 - **Cytogenetics** is the study of normal and abnormal chromosomes.
