@@ -70,19 +70,16 @@ $$(1-(1-0.05)^{10})=0.40126$$
 
 - For two-sided alternative hypotheses, the permutation p-value for hypothesis $H_j$ is
 
-$$p_j^* = \frac{\sum_{b=1}^B{I(\vert{t_{j,b}}\vert \ge \vert{t_j}\vert)}}{B}$$
+$$p_j^* = \frac{\sum_{b=1}^B{I(\vert{t_{j,b}}\vert \ge \vert{t_j}\vert)} + 1}{B + 1}$$
 
-where $I(*)$ is the indicator function, equaling 1 if the condition in parentheses is true and 0 otherwise.
+where $I(\*)$ is the indicator function, equaling 1 if the condition in parentheses is true and 0 otherwise.
 
 ## Permutation based methods {.larger}
 
 - Permutation method permits estimation of the joint null distribution of the unadjusted unknown p-values.
-
 - Dependency structure between the genes is preserved.
-
-- May suffer from a granularity problem (when two groups, should have  6 arrays in each group to use permutation based method).  
-
-$\frac{n!}{n_1!n_2!}$ ways of forming two groups
+- May suffer from a granularity problem (when two groups, should have  6 arrays in each group to use permutation based method). $\frac{n!}{n_1!n_2!}$ ways of forming two groups
+- The permutation p-value cannot be smaller than $1/(B+1)$, meaning that a large number of permutations are needed
 
 **Question: How many samples per group you need to get ~1,000 distinct permutations?**
 
@@ -90,6 +87,25 @@ $\frac{n!}{n_1!n_2!}$ ways of forming two groups
 factorial(12)/ (factorial(6) * factorial(6))
 [1] 924
 -->
+
+## Increasing permutation efficiency: Adaptive scheme
+
+- Run permutations until a given number $X$ (typically, 100) of null correlations stronger than the observed one are found
+- Limit permutations to no more than $Y$ (typically, 100,000) permutations in total
+- The adjusted p-value is calculated as
+
+$$p_{adj}=\frac{min(I, X) + 1}{min(B, Y) + 1}$$ 
+
+- Still unamle to provide adjusted p-values below $1/(M+1)$
+
+## Increasing permutation efficiency: beta approximation
+
+- Order statistics of independent uniformly distributed random variables are beta-distributed
+- The permutation p-values are also beta-distributed (Dudbridge and Koeleman, 2004)
+- Perform $Y$ permutations, estimate the parameters of beta distribution using maximum likelihood
+- Approximate permutation p-value from the best p-value obtained during $Y$ permutations
+
+\tine Ongen, Halit, Alfonso Buil, Andrew Anand Brown, Emmanouil T. Dermitzakis, and Olivier Delaneau. “Fast and Efficient QTL Mapper for Thousands of Molecular Phenotypes.” Bioinformatics (Oxford, England) 32, no. 10 (May 15, 2016): 1479–85. https://doi.org/10.1093/bioinformatics/btv722.
 
 ## Results of Multiple hypothesis testing
 
