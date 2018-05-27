@@ -353,6 +353,11 @@ where $\phi_2$ is the second principal component loading vector, with elements $
 - The variances of the components are the $\frac{1}{n}$ times the squares of the singular values
 - There are at most $min(n-1, p)$ principal components
 
+## How many components?
+
+- Kaiser's criterion: eigenvalue $\ge$ 1
+- Cattell's scree test: The number of components to retain corresponds to the point where the graph of eigenvalues of successive components vs. the component number begins to level off
+
 ## Singular Value Decomposition
 
 <center><img src="img/svd.png" height="550px" /></center>
