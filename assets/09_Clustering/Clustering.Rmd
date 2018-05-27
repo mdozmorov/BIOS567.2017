@@ -83,6 +83,17 @@ J. Kleinberg. "**An Impossibility Theorem for Clustering. Advances in Neural Inf
 
 ## Types of clustering algorithms {.larger}
 
+- Two categories:
+    - Heuristic algorithms
+        - No probabilistic model
+        - Optimizing a certain target function or iteratively agglomerating (or dividing) nodes to form bottom-up (top-down) trees
+        - Examples: K-means, hierarchical clustering
+    - Model-based analyses
+        - Probabilistic assumptions about the data
+        - Expectation Maximization algorithm
+
+## Types of clustering algorithms {.larger}
+
 - Partitioning methods
 - Hierarchical methods
 - Model based methods
