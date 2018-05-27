@@ -33,6 +33,29 @@ knit_hooks$set(source = function(x, options){
 })
 ```
 
+## Clustering validation
+
+- Clustering validation, which evaluates the goodness of clustering results, is essential to the success of clustering applications
+- Two main clustering validation approaches: **external** and **internal**. 
+    - **External** approach uses external information, e.g. given class labels estimate "purity" of clusters using entropy
+    - Since the “true” clustering is known in advance, external approach is mainly used for choosing an optimal clustering algorithm on a specific data set.
+    - **Internal** approach only relies on information in the data
+    - Internal validation measures can be used to choose the best clustering algorithm as well as the optimal cluster number without any additional information.
+
+## Clustering validation
+
+As the goal of clustering is to make objects within the same cluster similar and objects in different clusters distinct, internal validation measures are often based on the following two criteria:
+
+- **Compactness** - measures how closely related the objects in a cluster are. Example metrics: variance, average pairwise distance within a cluster
+- **Separation** - It measures how distinct or well-separated a cluster is from other clusters. Example metrics: average pairwise distances between cluster centers
+
+## General clustering validation procedure
+
+1. Initialize a list of clustering algorithms which will be applied to the data set.
+2. For each clustering algorithm, use different combinations of parameters to get different clustering results.
+3. Compute the corresponding **internal validation index** of each partition obtained in step 2.
+4. Choose the best partition and the optimal cluster number according to the criteria.
+
 ## Assess cluster fit and stability {.larger}
 
 - Most often ignored. 
@@ -196,6 +219,12 @@ Bittner M. et.al. "**Molecular classification of cutaneous malignant melanoma by
 - Calculate $D_j/M_j$
 
 $$WADP=\frac{\sum_{j=1}^k{m_jD_j/M_j}}{\sum_{j=1}^k{m_j}}$$
+
+## Other internal clustering validation measures
+
+internal_clustering_validation_metrics.png
+
+Liu, Yanchi, Zhongmou Li, Hui Xiong, Xuedong Gao, and Junjie Wu. “Understanding of Internal Clustering Validation Measures,” 911–16. IEEE, 2010. https://doi.org/10.1109/ICDM.2010.35.
 
 # Summary
 
