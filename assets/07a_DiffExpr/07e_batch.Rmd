@@ -104,6 +104,8 @@ For real application, an empirical Bayes method was applied for parameter estima
 
 https://www.bu.edu/jlab/wp-assets/ComBat/Abstract.html
 
+https://github.com/brentp/combat.py
+
 ## What if the batch variable is unknown? {.larger}
 
 - Manifests as systematic “unwanted variation” in data
