@@ -33,6 +33,15 @@ knit_hooks$set(source = function(x, options){
 })
 ```
 
+## Machine learning
+
+- **Supervised Learning**: given examples of inputs and corresponding desired outputs, predict outputs on future inputs.
+    - Ex: classification, regression, time series prediction
+- **Unsupervised Learning**: given only inputs, automatically discover representations, features, structure, etc.
+    - Ex: clustering, outlier detection, compression
+- **Rule Learning**: given multiple measurements, discover very common joint settings of subsets of measurements.
+- **Reinforcement Learning**: given sequences of inputs, actions from a fixed set, and scalar rewards/punishments, learn to select action sequences in a way that maximizes expected reward.
+
 ## What is clustering
 
 - Partitioning of genes or experiments into groups with similar behavior, assuming they are functionally related
