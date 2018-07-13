@@ -217,9 +217,22 @@ If we present apples and bananas with points and similarity with lines then
 - Cluster based on the feature vectors
 -->
 
-# Projection methods
+# Dimensionality reduction methods
 
-## Projection (dimensionality reduction) methods {.larger}
+## Dimensionality reduction overview {.larger}
+
+- Dimensionality Reduction (DR) essentially aims to find low dimensional representations of data while preserving their key properties
+- DR methods can be modeled after physical models with attracting and repelling forces (Force Directed Methods), projections onto low dimensional planes (PCA, ICA), divergence of statistical distributions (SNE family), the reconstruction of local spaces or points by their neighbors (LLE)
+
+\tiny Guido Kraemer, Markus Reichstein, and Miguel D. Mahecha, “DimRed and CoRanking Unifying Dimensionality Reduction in R,” The R Journal, 2018, https://journal.r-project.org/archive/2018/RJ-2018-039/index.html.
+
+## Dimensionality reduction overview {.larger}
+
+dr_classification.png
+
+\tiny Guido Kraemer, Markus Reichstein, and Miguel D. Mahecha, “DimRed and CoRanking Unifying Dimensionality Reduction in R,” The R Journal, 2018, https://journal.r-project.org/archive/2018/RJ-2018-039/index.html.
+
+## Projection methods (PCA)
 
 - Linearly decompose the dataset into components that have a desired property. 
 - There are largely two kinds of projection methods: principal component analysis (PCA) and independent component analysis (ICA). 
@@ -396,7 +409,8 @@ Example: Leukemia data sets by Golub et al.: Classification of ALL and AML
 ## ICA - Independent Component Analysis {.larger}
 
 - PCA assumes multivariate normally distributed data - gene expression data are super-Gaussian
-- ICA models observations as a linear combination of latent feature variables, or components, which are chosen to be as _statistically independent_ as possible. 
+- ICA models observations as a linear combination of latent feature variables, or components, which are chosen to be as _statistically independent_ as possible. Think about a number of sound sources mixed together, ICA tries to "un-mix" them
+- ICA is a linear rotation of the data just as PCA but instead of recovering the maximum variance, it recovers statistically independent components
 - For microarray data, observations consist of microarray gene expression measurements, and independent components are interpreted to be transcriptional modules that often correspond to specific biological processes
 
 http://www.sciencedirect.com/science/article/pii/S1532046410001000
@@ -564,6 +578,19 @@ $$stress=\sqrt{\frac{\sum{(d_{ij} - \hat{d_{ij}})^2}}{\sum{d_{ij}^2}}}$$
 - t-SNE, https://www.youtube.com/watch?v=EMD106bB2vY
 - t-SNE tutorial https://mark-borg.github.io//blog/2016/tsne/
 
+## Stochastic Neighbor Embedding
+
+- Stochastic Neighbor Embedding (SNE) is a technique that minimizes the Kullback-Leibler divergence of scaled similarities of the points $i$ and $j$ in high dimensional space, $p_{ij}$, and low dimensional space, $q_{ij}$
+
+$$KL(P||Q) = \sum_{i \ne j}p_{ij}log\frac{p_{ij}}{q_{ij}}$$
+
+- SNE uses a Gaussian kernel ($exp(-\frac{||x_i - x_j||^2}{2\sigma^2})$) to compute similarities in high and low dimensional space. $\sigma$ is a length scale parameter accounting for the width of the kernel
+
+## t-Distributed Stochastic Neighborhood Embedding (t-SNE)
+
+- Improves on SNE by using a t-Distribution as a kernel in low dimensional space
+- Because of the heavy-tailed t-distribution, t-SNE maintains local neighborhoods of the data better and penalizes wrong embeddings of dissimilar points. This property makes it especially suitable to represent clustered data and complex structures in few dimensions
+- t-SNE has one parameter, perplexity, to tune which determines the neighborhood size of the kernels used.
 
 ## t-SNE: Collapsing the Visualization to 2D
 
