@@ -28,6 +28,10 @@ output:
 
 ## Batch sources
 
+Differentiation state / culture passage / sample purity / freezing date / age / sex / sample processing time / technician / sequencer / flowcell / lane / lab / season / software version / number of freeze-thaw cycles / sample quality / concentration / time of day / location of sample on plate / age of media bottle / cell density / growth rate / CO2 level / temperature / RIN / extraction protocol / read count / library mix
+
+## Batch sources
+
 <center>
 ![](img/batch_sources.png)
 </center>
