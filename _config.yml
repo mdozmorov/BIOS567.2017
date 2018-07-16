@@ -35,6 +35,9 @@ communication:
 officehours:
   description: "Monday/Wednesday 10:30 pm to 12:00 pm at Biostatistics Office 730."
   link: ""
+prerequisites:
+  description: "BIOS 524 Biostatistical Computing. For overrides, contact the instructor"
+  link: ""
 # Tachyons Version
 tv: "4.6.1"
 
