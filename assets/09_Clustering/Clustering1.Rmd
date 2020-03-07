@@ -510,6 +510,9 @@ NMF can handle overlapping clusters and provides soft cluster membership indicat
 - Optimization procedure
     - Most use stochastic initialization, and the results don’t always converge to the same answer
 
+\tiny Lee, Daniel D., and H. Sebastian Seung. “Algorithms for Non-Negative Matrix Factorization.” In Advances in Neural Information Processing Systems 13, edited by T. K. Leen, T. G. Dietterich, and V. Tresp, 556–62. MIT Press, 2001. http://papers.nips.cc/paper/1861-algorithms-for-non-negative-matrix-factorization.pdf.
+
+
 ## NMF {.larger}
 
 - $A=WH$ : Toy Biological interpretation

@@ -17,6 +17,22 @@ output:
 date: "Fall 2017"
 ---
 
+---
+title: "Chi-square test, Fisher’s Exact test, McNemar’s Test"
+author: "Mikhail Dozmorov"
+date: "Spring 2018"
+output:
+  beamer_presentation:
+    # colortheme: seahorse
+    colortheme: dolphin
+    fig_caption: no
+    fig_height: 6
+    fig_width: 7
+    fonttheme: structurebold
+    # theme: boxes
+    theme: AnnArbor
+---
+
 ## Tests for enrichment {.larger}
 
 - Fisher’s exact
